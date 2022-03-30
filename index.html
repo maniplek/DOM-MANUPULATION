@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-wrapper  ml-8 mx-auto mt-8">
+        <form class="form">
+            <h3 class="ml-40 text-green-1000">MY TODO</h3>
+          <label for="name" class="form-item">
+            Todo Name:
+            <input type="text" id="name" required />
+          </label>
+          <label for="date" class="form-item">
+            Todo Date:
+            <input type="date" id="date" required />
+          </label>
+          <label for="completed" class="form-item">
+            <input type="checkbox" id="completed" />Todo Completed
+          </label>
+          <input type="button" value="Save" id="submitBtn" class="form-item form-control block w-full px-3 py-1.5 text-gray-700 text-base bg-green-600 text-white border border-solid border-gray-300 rounded transition ease-in-out focus:text-gray-700 focus:border-green-600 focus:outline-none" />
+          <div id="todos">
+          </div>
+        </form>
+      </div>
+      <script src="/app.js"></script>
+</body>
+</html>

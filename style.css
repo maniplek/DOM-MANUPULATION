@@ -1,0 +1,43 @@
+* {
+    box-sizimg: border-box;
+  }
+  .html, body {
+    background-color: hsl(222, 20%, 95%);
+    font-size: 1rem;
+  }
+  h3{
+      color: green;
+  }
+  .form-wrapper {
+    position: relative;
+    display: grid;
+    height: 100%;
+    margin: 0;
+    place-items: center;
+    max-width: 100%;
+  }
+  .form {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    margin: 8px;
+  }
+  .form-item {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input[type="text"],
+  input[type="date"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 0;
+    background-color: hsl(222, 20%, 95%);
+  }
+  .completed {
+    background-color: green;
+  }
+  .completed-text {
+    color: white;
+    text-decoration: line-through;
+  }
