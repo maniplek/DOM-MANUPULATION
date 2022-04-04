@@ -6,13 +6,17 @@ const onSubmit = () => {
     
     const div = document.createElement('div')
     const p = document.createElement('p')
-    p.textContent = name.value + " - " + date.value;
+    const h = document.createElement('span')
+    p.textContent = " - " + date.value;
+    h.textContent =  name.value;
+    div.appendChild(h)
     div.appendChild(p)
     todos.appendChild(div)
-    
+    div.classList.add('todos_item')
+
     if (completed.checked) {
       div.classList.add('completed')
-      p.classList.add('completed-text')
+      h.classList.add('completed-name')
     }
     
     name.value = ''

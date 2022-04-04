@@ -36,8 +36,15 @@
   }
   .completed {
     background-color: green;
+
   }
-  .completed-text {
+  .completed-name {
     color: white;
     text-decoration: line-through;
+  }
+  .todos_item{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
   }
